@@ -18,5 +18,5 @@ dependencies {
   runtime "org.slf4j:slf4j-simple:1.7.12"
 }
 
-mainClassName = "com.kryger.whatcolourisit.Main"
+mainClassName = "com.kryger.whatcolorisit.Main"
  

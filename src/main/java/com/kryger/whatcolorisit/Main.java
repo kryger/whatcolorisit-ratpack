@@ -1,4 +1,4 @@
-package com.kryger.whatcolourisit;
+package com.kryger.whatcolorisit;
 
 import ratpack.server.RatpackServer;
 
@@ -7,7 +7,7 @@ public class Main {
    RatpackServer.start(server -> server
      .handlers(chain -> chain
        .get(ctx -> ctx.render("Hello World!"))
-       .get(":name", ctx -> ctx.render("Hello " + ctx.getPathTokens().get("name") + "!"))
+       .get("api/:color", ctx -> ctx.render("Hello " + ctx.getPathTokens().get("color") + "!"))
      )
    );
  }
