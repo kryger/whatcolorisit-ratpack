@@ -1,0 +1,22 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath "io.ratpack:ratpack-gradle:0.9.17"
+  }
+}
+
+apply plugin: "io.ratpack.ratpack-java"
+apply plugin: "eclipse"
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  runtime "org.slf4j:slf4j-simple:1.7.12"
+}
+
+mainClassName = "com.kryger.whatcolourisit.Main"
+ 
