@@ -18,5 +18,9 @@ dependencies {
   runtime "org.slf4j:slf4j-simple:1.7.12"
 }
 
+task stage {
+  dependsOn installDist
+}
+
 mainClassName = "com.kryger.whatcolorisit.Main"
  
